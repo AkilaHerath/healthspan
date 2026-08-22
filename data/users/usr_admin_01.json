@@ -1,0 +1,1500 @@
+{
+  "version": "1.0.0",
+  "tenantId": "tenant-enterprise-01",
+  "userId": "usr_admin_01",
+  "account": {
+    "email": "admin@healthspan.com",
+    "passwordHash": "admin123",
+    "twoFactorEnabled": false,
+    "createdAt": "2026-01-10T09:00:00Z",
+    "lastLoginAt": "2026-08-22T08:30:00Z"
+  },
+  "profile": {
+    "fullName": "Chandima Jayasinghe",
+    "dob": "1991-01-01",
+    "gender": "male",
+    "ethnicity": "Asian",
+    "baselineBiometrics": {
+      "initialHeightCm": 170,
+      "initialWeightKg": 76,
+      "baselineBloodPressure": "120/80"
+    }
+  },
+  "timeSeries": {
+    "bodyMetrics": [
+      {
+        "id": "bm-001",
+        "timestamp": "2026-03-01T08:15:00Z",
+        "weightKg": 76,
+        "heightCm": 178,
+        "bmi": 24,
+        "waistCircumferenceCm": 92,
+        "bloodPressure": {
+          "systolic": 112,
+          "diastolic": 78
+        },
+        "heartRateBpm": 68,
+        "notes": "Baseline spring check-in. Normal vitals.",
+        "status": "normal"
+      },
+      {
+        "id": "bm-002",
+        "timestamp": "2026-04-12T07:45:00Z",
+        "weightKg": 77.2,
+        "heightCm": 178,
+        "bmi": 24.4,
+        "waistCircumferenceCm": 94,
+        "bloodPressure": {
+          "systolic": 112,
+          "diastolic": 72
+        },
+        "heartRateBpm": 70,
+        "notes": "Slight weight uptick post travel.",
+        "status": "normal"
+      },
+      {
+        "id": "bm-003",
+        "timestamp": "2026-05-20T08:30:00Z",
+        "weightKg": 78.5,
+        "heightCm": 178,
+        "bmi": 24.8,
+        "waistCircumferenceCm": 96,
+        "bloodPressure": {
+          "systolic": 118,
+          "diastolic": 74
+        },
+        "heartRateBpm": 72,
+        "notes": "Blood pressure slightly elevated in clinic.",
+        "status": "normal"
+      },
+      {
+        "id": "bm-005",
+        "timestamp": "2026-07-04T12:46:00Z",
+        "weightKg": 66,
+        "heightCm": 178,
+        "bmi": 20.8,
+        "waistCircumferenceCm": 100,
+        "bloodPressure": {
+          "systolic": 110,
+          "diastolic": 70
+        },
+        "heartRateBpm": 76,
+        "notes": "Recorded at home after lunch. Systolic trending higher.",
+        "status": "normal"
+      }
+    ],
+    "lifestyle": {
+      "sleep": [
+        {
+          "id": "sl-001",
+          "timestamp": "2026-08-16T06:30:00Z",
+          "durationHours": 6.2,
+          "qualityScore": 72,
+          "bedtime": "23:30",
+          "wakeTime": "06:00",
+          "notes": "Woke up once during night."
+        },
+        {
+          "id": "sl-002",
+          "timestamp": "2026-08-17T06:45:00Z",
+          "durationHours": 6.5,
+          "qualityScore": 75,
+          "bedtime": "23:45",
+          "wakeTime": "06:30",
+          "notes": "Normal sleep."
+        },
+        {
+          "id": "sl-003",
+          "timestamp": "2026-08-18T06:15:00Z",
+          "durationHours": 5.8,
+          "qualityScore": 64,
+          "bedtime": "00:15",
+          "wakeTime": "06:05",
+          "notes": "Restless due to late screen time."
+        },
+        {
+          "id": "sl-004",
+          "timestamp": "2026-08-19T07:00:00Z",
+          "durationHours": 7.2,
+          "qualityScore": 88,
+          "bedtime": "23:15",
+          "wakeTime": "06:45",
+          "notes": "Good deep sleep cycle."
+        },
+        {
+          "id": "sl-005",
+          "timestamp": "2026-08-20T06:30:00Z",
+          "durationHours": 6,
+          "qualityScore": 70,
+          "bedtime": "00:00",
+          "wakeTime": "06:00",
+          "notes": "Early morning meeting."
+        },
+        {
+          "id": "sl-006",
+          "timestamp": "2026-08-21T06:45:00Z",
+          "durationHours": 6.3,
+          "qualityScore": 73,
+          "bedtime": "23:45",
+          "wakeTime": "06:15",
+          "notes": "Mild morning fatigue."
+        }
+      ],
+      "exercise": [
+        {
+          "id": "ex-001",
+          "timestamp": "2026-08-15T18:00:00Z",
+          "activityType": "Cardio",
+          "durationMinutes": 35,
+          "intensity": "Moderate",
+          "caloriesBurned": 280,
+          "notes": "Treadmill jogging at 8.5 km/h"
+        },
+        {
+          "id": "ex-002",
+          "timestamp": "2026-08-17T18:30:00Z",
+          "activityType": "Strength",
+          "durationMinutes": 25,
+          "intensity": "High",
+          "caloriesBurned": 190,
+          "notes": "Upper body resistance training"
+        },
+        {
+          "id": "ex-003",
+          "timestamp": "2026-08-19T19:00:00Z",
+          "activityType": "Walking",
+          "durationMinutes": 20,
+          "intensity": "Low",
+          "caloriesBurned": 95,
+          "notes": "Evening brisk neighborhood walk"
+        },
+        {
+          "id": "ex-004",
+          "timestamp": "2026-08-21T18:15:00Z",
+          "activityType": "Cardio",
+          "durationMinutes": 20,
+          "intensity": "Moderate",
+          "caloriesBurned": 160,
+          "notes": "Stationary spin bike"
+        }
+      ],
+      "diet": [
+        {
+          "id": "dt-001",
+          "timestamp": "2026-08-21T08:30:00Z",
+          "mealType": "Breakfast",
+          "description": "Greek yogurt with rolled oats, chia seeds, and blueberries",
+          "calories": 420,
+          "proteinGrams": 28,
+          "carbsGrams": 48,
+          "fatGrams": 12,
+          "alcoholUnits": 0,
+          "cigarettesCount": 0
+        },
+        {
+          "id": "dt-002",
+          "timestamp": "2026-08-21T13:00:00Z",
+          "mealType": "Lunch",
+          "description": "Grilled chicken breast with quinoa, avocado, and mixed greens",
+          "calories": 650,
+          "proteinGrams": 45,
+          "carbsGrams": 55,
+          "fatGrams": 22,
+          "alcoholUnits": 0,
+          "cigarettesCount": 0
+        },
+        {
+          "id": "dt-003",
+          "timestamp": "2026-08-21T19:30:00Z",
+          "mealType": "Dinner",
+          "description": "Pan-seared Atlantic salmon with steamed broccoli and brown rice",
+          "calories": 720,
+          "proteinGrams": 48,
+          "carbsGrams": 60,
+          "fatGrams": 26,
+          "alcoholUnits": 1,
+          "cigarettesCount": 0
+        },
+        {
+          "id": "dt-004",
+          "timestamp": "2026-08-21T16:00:00Z",
+          "mealType": "Snack",
+          "description": "Handful of raw almonds and green tea",
+          "calories": 180,
+          "proteinGrams": 6,
+          "carbsGrams": 8,
+          "fatGrams": 15,
+          "alcoholUnits": 0,
+          "cigarettesCount": 0
+        }
+      ],
+      "medications": [
+        {
+          "id": "med-001",
+          "condition": "Hypertension",
+          "drugName": "Amlodipine Besylate",
+          "dosage": "5 mg",
+          "frequency": "Once daily in the morning",
+          "scheduleTime": [
+            "08:00"
+          ],
+          "startDate": "2026-02-15",
+          "active": true,
+          "lastTakenTimestamp": "2026-08-22T08:05:00Z"
+        },
+        {
+          "id": "med-002",
+          "condition": "Type 2 Diabetes Prevention (Prediabetes)",
+          "drugName": "Metformin HCl",
+          "dosage": "500 mg",
+          "frequency": "Twice daily with meals",
+          "scheduleTime": [
+            "08:00",
+            "20:00"
+          ],
+          "startDate": "2026-05-10",
+          "active": true,
+          "lastTakenTimestamp": "2026-08-22T07:04:10.083Z"
+        },
+        {
+          "id": "med-003",
+          "condition": "Dyslipidemia",
+          "drugName": "Atorvastatin",
+          "dosage": "10 mg",
+          "frequency": "Once daily at bedtime",
+          "scheduleTime": [
+            "21:30"
+          ],
+          "startDate": "2026-05-10",
+          "active": true,
+          "lastTakenTimestamp": "2026-08-21T21:40:00Z"
+        }
+      ]
+    },
+    "labResults": [
+      {
+        "id": "lab-001",
+        "timestamp": "2026-03-05T09:00:00Z",
+        "panel": "Blood Sugar",
+        "testName": "Fasting Blood Sugar",
+        "value": 92,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 70,
+          "max": 99,
+          "optimal": "70-99 mg/dL"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-002",
+        "timestamp": "2026-03-05T09:00:00Z",
+        "panel": "Blood Sugar",
+        "testName": "HbA1c",
+        "value": 5.4,
+        "unit": "%",
+        "referenceRange": {
+          "min": 4,
+          "max": 5.6,
+          "optimal": "< 5.7 %"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-003",
+        "timestamp": "2026-03-05T09:00:00Z",
+        "panel": "Lipid Panel",
+        "testName": "Total Cholesterol",
+        "value": 188,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 125,
+          "max": 200,
+          "optimal": "< 200 mg/dL"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-004",
+        "timestamp": "2026-03-05T09:00:00Z",
+        "panel": "Lipid Panel",
+        "testName": "LDL Cholesterol",
+        "value": 98,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 50,
+          "max": 100,
+          "optimal": "< 100 mg/dL"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-005",
+        "timestamp": "2026-03-05T09:00:00Z",
+        "panel": "Lipid Panel",
+        "testName": "HDL Cholesterol",
+        "value": 48,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 40,
+          "max": 90,
+          "optimal": "> 40 mg/dL"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-006",
+        "timestamp": "2026-03-05T09:00:00Z",
+        "panel": "Lipid Panel",
+        "testName": "Triglycerides",
+        "value": 135,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 50,
+          "max": 150,
+          "optimal": "< 150 mg/dL"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-007",
+        "timestamp": "2026-03-05T09:00:00Z",
+        "panel": "Renal Function",
+        "testName": "Serum Creatinine (S/Cr)",
+        "value": 1.05,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 0.74,
+          "max": 1.35,
+          "optimal": "0.74-1.35 mg/dL"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-008",
+        "timestamp": "2026-03-05T09:00:00Z",
+        "panel": "Renal Function",
+        "testName": "eGFR",
+        "value": 98,
+        "unit": "mL/min/1.73m²",
+        "referenceRange": {
+          "min": 90,
+          "max": 120,
+          "optimal": "> 90 mL/min"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-009",
+        "timestamp": "2026-03-05T09:00:00Z",
+        "panel": "Liver Function",
+        "testName": "AST (SGOT)",
+        "value": 24,
+        "unit": "U/L",
+        "referenceRange": {
+          "min": 10,
+          "max": 40,
+          "optimal": "10-40 U/L"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-010",
+        "timestamp": "2026-03-05T09:00:00Z",
+        "panel": "Liver Function",
+        "testName": "ALT (SGPT)",
+        "value": 28,
+        "unit": "U/L",
+        "referenceRange": {
+          "min": 7,
+          "max": 56,
+          "optimal": "7-56 U/L"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-011",
+        "timestamp": "2026-03-05T09:00:00Z",
+        "panel": "Hemoglobin",
+        "testName": "Hemoglobin",
+        "value": 15.2,
+        "unit": "g/dL",
+        "referenceRange": {
+          "min": 13.8,
+          "max": 17.2,
+          "optimal": "13.8-17.2 g/dL"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-012",
+        "timestamp": "2026-08-10T08:30:00Z",
+        "panel": "Blood Sugar",
+        "testName": "Fasting Blood Sugar",
+        "value": 114,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 70,
+          "max": 99,
+          "optimal": "70-99 mg/dL"
+        },
+        "status": "borderline",
+        "source": "ocr_upload",
+        "ocrConfidence": 97,
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-013",
+        "timestamp": "2026-08-10T08:30:00Z",
+        "panel": "Blood Sugar",
+        "testName": "HbA1c",
+        "value": 5.9,
+        "unit": "%",
+        "referenceRange": {
+          "min": 4,
+          "max": 5.6,
+          "optimal": "< 5.7 %"
+        },
+        "status": "borderline",
+        "source": "ocr_upload",
+        "ocrConfidence": 95,
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-014",
+        "timestamp": "2026-08-10T08:30:00Z",
+        "panel": "Lipid Panel",
+        "testName": "Total Cholesterol",
+        "value": 218,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 125,
+          "max": 200,
+          "optimal": "< 200 mg/dL"
+        },
+        "status": "borderline",
+        "source": "ocr_upload",
+        "ocrConfidence": 98,
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-015",
+        "timestamp": "2026-08-10T08:30:00Z",
+        "panel": "Lipid Panel",
+        "testName": "LDL Cholesterol",
+        "value": 136,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 50,
+          "max": 100,
+          "optimal": "< 100 mg/dL"
+        },
+        "status": "borderline",
+        "source": "ocr_upload",
+        "ocrConfidence": 94,
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-016",
+        "timestamp": "2026-08-10T08:30:00Z",
+        "panel": "Lipid Panel",
+        "testName": "HDL Cholesterol",
+        "value": 41,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 40,
+          "max": 90,
+          "optimal": "> 40 mg/dL"
+        },
+        "status": "normal",
+        "source": "ocr_upload",
+        "ocrConfidence": 96,
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-017",
+        "timestamp": "2026-08-10T08:30:00Z",
+        "panel": "Lipid Panel",
+        "testName": "Triglycerides",
+        "value": 172,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 50,
+          "max": 150,
+          "optimal": "< 150 mg/dL"
+        },
+        "status": "borderline",
+        "source": "ocr_upload",
+        "ocrConfidence": 92,
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-018",
+        "timestamp": "2026-08-10T08:30:00Z",
+        "panel": "Renal Function",
+        "testName": "Serum Creatinine (S/Cr)",
+        "value": 1.18,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 0.74,
+          "max": 1.35,
+          "optimal": "0.74-1.35 mg/dL"
+        },
+        "status": "normal",
+        "source": "ocr_upload",
+        "ocrConfidence": 99,
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-019",
+        "timestamp": "2026-08-10T08:30:00Z",
+        "panel": "Liver Function",
+        "testName": "ALT (SGPT)",
+        "value": 36,
+        "unit": "U/L",
+        "referenceRange": {
+          "min": 7,
+          "max": 56,
+          "optimal": "7-56 U/L"
+        },
+        "status": "normal",
+        "source": "ocr_upload",
+        "ocrConfidence": 91,
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-020",
+        "timestamp": "2026-08-10T08:30:00Z",
+        "panel": "Liver Function",
+        "testName": "AST (SGOT)",
+        "value": 36,
+        "unit": "U/L",
+        "referenceRange": {
+          "min": 10,
+          "max": 40,
+          "optimal": "10-40 U/L"
+        },
+        "status": "normal",
+        "source": "ocr_upload",
+        "ocrConfidence": 93,
+        "reviewedByPatient": true
+      },
+      {
+        "id": "lab-021",
+        "timestamp": "2026-08-10T08:30:00Z",
+        "panel": "Hemoglobin",
+        "testName": "Hemoglobin",
+        "value": 15,
+        "unit": "g/dL",
+        "referenceRange": {
+          "min": 13.8,
+          "max": 17.2,
+          "optimal": "13.8-17.2 g/dL"
+        },
+        "status": "normal",
+        "source": "ocr_upload",
+        "ocrConfidence": 98,
+        "reviewedByPatient": true
+      },
+      {
+        "timestamp": "2026-08-22T06:34:00.000Z",
+        "panel": "Blood Sugar",
+        "testName": "Fasting Blood Sugar",
+        "value": 90,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 70,
+          "max": 99,
+          "optimal": "70 - 99 mg/dL"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true,
+        "id": "lab-1787380680854"
+      },
+      {
+        "timestamp": "2026-08-22T08:18:00.000Z",
+        "panel": "Blood Sugar",
+        "testName": "Fasting Blood Sugar",
+        "value": 200,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 70,
+          "max": 99,
+          "optimal": "70 - 99 mg/dL"
+        },
+        "status": "critical",
+        "source": "manual",
+        "reviewedByPatient": true,
+        "id": "lab-1787386737163"
+      }
+    ]
+  },
+  "auditTrail": [
+    {
+      "id": "aud-1787386737163-ewjm",
+      "timestamp": "2026-08-22T08:18:57.163Z",
+      "action": "CREATE",
+      "entityType": "labResults",
+      "recordId": "lab-1787386737163",
+      "summary": "Logged lab result: Fasting Blood Sugar = 200 mg/dL (CRITICAL)",
+      "reason": "Manual user action"
+    },
+    {
+      "id": "aud-1787384700047-jb7l",
+      "timestamp": "2026-08-22T07:45:00.047Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-005",
+      "summary": "Updated body metric record (bm-005): Weight 66kg",
+      "reason": "nil",
+      "previousValue": {
+        "id": "bm-005",
+        "timestamp": "2026-07-04T12:46:00Z",
+        "weightKg": 60,
+        "heightCm": 178,
+        "bmi": 18.9,
+        "waistCircumferenceCm": 100,
+        "bloodPressure": {
+          "systolic": 110,
+          "diastolic": 70
+        },
+        "heartRateBpm": 76,
+        "notes": "Recorded at home after lunch. Systolic trending higher.",
+        "status": "normal"
+      },
+      "newValue": {
+        "id": "bm-005",
+        "timestamp": "2026-07-04T12:46:00Z",
+        "weightKg": 66,
+        "heightCm": 178,
+        "bmi": 20.8,
+        "waistCircumferenceCm": 100,
+        "bloodPressure": {
+          "systolic": 110,
+          "diastolic": 70
+        },
+        "heartRateBpm": 76,
+        "notes": "Recorded at home after lunch. Systolic trending higher.",
+        "status": "normal"
+      }
+    },
+    {
+      "id": "aud-1787384453663-dcff",
+      "timestamp": "2026-08-22T07:40:53.663Z",
+      "action": "UPDATE",
+      "entityType": "labResults",
+      "recordId": "lab-019",
+      "summary": "Updated lab result (lab-019): ALT (SGPT) = 36 U/L",
+      "reason": "Updated lab measurement value",
+      "previousValue": {
+        "id": "lab-019",
+        "timestamp": "2026-08-10T08:30:00Z",
+        "panel": "Liver Function",
+        "testName": "ALT (SGPT)",
+        "value": 48,
+        "unit": "U/L",
+        "referenceRange": {
+          "min": 7,
+          "max": 56,
+          "optimal": "7-56 U/L"
+        },
+        "status": "normal",
+        "source": "ocr_upload",
+        "ocrConfidence": 91,
+        "reviewedByPatient": true
+      },
+      "newValue": {
+        "id": "lab-019",
+        "timestamp": "2026-08-10T08:30:00Z",
+        "panel": "Liver Function",
+        "testName": "ALT (SGPT)",
+        "value": 36,
+        "unit": "U/L",
+        "referenceRange": {
+          "min": 7,
+          "max": 56,
+          "optimal": "7-56 U/L"
+        },
+        "status": "normal",
+        "source": "ocr_upload",
+        "ocrConfidence": 91,
+        "reviewedByPatient": true
+      }
+    },
+    {
+      "id": "aud-1787384372115-tbke",
+      "timestamp": "2026-08-22T07:39:32.115Z",
+      "action": "DELETE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-006",
+      "summary": "Deleted body metric measurement recorded on 8/18/2026, 1:30:00 PM",
+      "reason": "Incorrect sensor calibration",
+      "previousValue": {
+        "id": "bm-006",
+        "timestamp": "2026-08-18T08:00:00Z",
+        "weightKg": 56,
+        "heightCm": 178,
+        "bmi": 17.7,
+        "waistCircumferenceCm": 101,
+        "bloodPressure": {
+          "systolic": 110,
+          "diastolic": 80
+        },
+        "heartRateBpm": 78,
+        "notes": "Latest morning measurement. Upward trend sustained.",
+        "status": "warning"
+      }
+    },
+    {
+      "id": "aud-1787384368858-to7f",
+      "timestamp": "2026-08-22T07:39:28.858Z",
+      "action": "DELETE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-004",
+      "summary": "Deleted body metric measurement recorded on 6/28/2026, 2:30:00 PM",
+      "reason": "Incorrect sensor calibration",
+      "previousValue": {
+        "id": "bm-004",
+        "timestamp": "2026-06-28T09:00:00Z",
+        "weightKg": 56,
+        "heightCm": 178,
+        "bmi": 17.7,
+        "waistCircumferenceCm": 99,
+        "bloodPressure": {
+          "systolic": 114,
+          "diastolic": 76
+        },
+        "heartRateBpm": 74,
+        "notes": "BMI crossed 25.0 threshold into overweight.",
+        "status": "warning"
+      }
+    },
+    {
+      "id": "aud-1787383853611-wr86",
+      "timestamp": "2026-08-22T07:30:53.611Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-006",
+      "summary": "Updated body metric record (bm-006): Weight 56kg",
+      "reason": "nil",
+      "previousValue": {
+        "id": "bm-006",
+        "timestamp": "2026-08-18T08:00:00Z",
+        "weightKg": 70,
+        "heightCm": 178,
+        "bmi": 22.1,
+        "waistCircumferenceCm": 101,
+        "bloodPressure": {
+          "systolic": 110,
+          "diastolic": 80
+        },
+        "heartRateBpm": 78,
+        "notes": "Latest morning measurement. Upward trend sustained.",
+        "status": "warning"
+      },
+      "newValue": {
+        "id": "bm-006",
+        "timestamp": "2026-08-18T08:00:00Z",
+        "weightKg": 56,
+        "heightCm": 178,
+        "bmi": 17.7,
+        "waistCircumferenceCm": 101,
+        "bloodPressure": {
+          "systolic": 110,
+          "diastolic": 80
+        },
+        "heartRateBpm": 78,
+        "notes": "Latest morning measurement. Upward trend sustained.",
+        "status": "warning"
+      }
+    },
+    {
+      "id": "aud-1787383829593-6n2x",
+      "timestamp": "2026-08-22T07:30:29.593Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-004",
+      "summary": "Updated body metric record (bm-004): Weight 56kg",
+      "reason": "nil",
+      "previousValue": {
+        "id": "bm-004",
+        "timestamp": "2026-06-28T09:00:00Z",
+        "weightKg": 79.8,
+        "heightCm": 178,
+        "bmi": 25.2,
+        "waistCircumferenceCm": 99,
+        "bloodPressure": {
+          "systolic": 114,
+          "diastolic": 76
+        },
+        "heartRateBpm": 74,
+        "notes": "BMI crossed 25.0 threshold into overweight.",
+        "status": "warning"
+      },
+      "newValue": {
+        "id": "bm-004",
+        "timestamp": "2026-06-28T09:00:00Z",
+        "weightKg": 56,
+        "heightCm": 178,
+        "bmi": 17.7,
+        "waistCircumferenceCm": 99,
+        "bloodPressure": {
+          "systolic": 114,
+          "diastolic": 76
+        },
+        "heartRateBpm": 74,
+        "notes": "BMI crossed 25.0 threshold into overweight.",
+        "status": "warning"
+      }
+    },
+    {
+      "id": "aud-1787383821034-iobn",
+      "timestamp": "2026-08-22T07:30:21.034Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-005",
+      "summary": "Updated body metric record (bm-005): Weight 60kg",
+      "reason": "nil",
+      "previousValue": {
+        "id": "bm-005",
+        "timestamp": "2026-07-04T12:46:00Z",
+        "weightKg": 80.5,
+        "heightCm": 178,
+        "bmi": 25.4,
+        "waistCircumferenceCm": 100,
+        "bloodPressure": {
+          "systolic": 110,
+          "diastolic": 70
+        },
+        "heartRateBpm": 76,
+        "notes": "Recorded at home after lunch. Systolic trending higher.",
+        "status": "warning"
+      },
+      "newValue": {
+        "id": "bm-005",
+        "timestamp": "2026-07-04T12:46:00Z",
+        "weightKg": 60,
+        "heightCm": 178,
+        "bmi": 18.9,
+        "waistCircumferenceCm": 100,
+        "bloodPressure": {
+          "systolic": 110,
+          "diastolic": 70
+        },
+        "heartRateBpm": 76,
+        "notes": "Recorded at home after lunch. Systolic trending higher.",
+        "status": "normal"
+      }
+    },
+    {
+      "id": "aud-1787383812566-jaga",
+      "timestamp": "2026-08-22T07:30:12.566Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-006",
+      "summary": "Updated body metric record (bm-006): Weight 70kg",
+      "reason": "nil",
+      "previousValue": {
+        "id": "bm-006",
+        "timestamp": "2026-08-18T08:00:00Z",
+        "weightKg": 81.2,
+        "heightCm": 178,
+        "bmi": 25.6,
+        "waistCircumferenceCm": 101,
+        "bloodPressure": {
+          "systolic": 110,
+          "diastolic": 80
+        },
+        "heartRateBpm": 78,
+        "notes": "Latest morning measurement. Upward trend sustained.",
+        "status": "warning"
+      },
+      "newValue": {
+        "id": "bm-006",
+        "timestamp": "2026-08-18T08:00:00Z",
+        "weightKg": 70,
+        "heightCm": 178,
+        "bmi": 22.1,
+        "waistCircumferenceCm": 101,
+        "bloodPressure": {
+          "systolic": 110,
+          "diastolic": 80
+        },
+        "heartRateBpm": 78,
+        "notes": "Latest morning measurement. Upward trend sustained.",
+        "status": "warning"
+      }
+    },
+    {
+      "id": "aud-1787383541927-ve85",
+      "timestamp": "2026-08-22T07:25:41.927Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-001",
+      "summary": "Updated body metric record (bm-001): Weight 76kg",
+      "reason": "nil",
+      "previousValue": {
+        "id": "bm-001",
+        "timestamp": "2026-03-01T08:15:00Z",
+        "weightKg": 76,
+        "heightCm": 178,
+        "bmi": 24,
+        "waistCircumferenceCm": 92,
+        "bloodPressure": {
+          "systolic": 120,
+          "diastolic": 80,
+          "pulse": 68
+        },
+        "heartRateBpm": 68,
+        "notes": "Baseline spring check-in. Normal vitals.",
+        "status": "normal"
+      },
+      "newValue": {
+        "id": "bm-001",
+        "timestamp": "2026-03-01T08:15:00Z",
+        "weightKg": 76,
+        "heightCm": 178,
+        "bmi": 24,
+        "waistCircumferenceCm": 92,
+        "bloodPressure": {
+          "systolic": 112,
+          "diastolic": 78
+        },
+        "heartRateBpm": 68,
+        "notes": "Baseline spring check-in. Normal vitals.",
+        "status": "normal"
+      }
+    },
+    {
+      "id": "aud-1787383526730-ru85",
+      "timestamp": "2026-08-22T07:25:26.730Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-002",
+      "summary": "Updated body metric record (bm-002): Weight 77.2kg",
+      "reason": "nil",
+      "previousValue": {
+        "id": "bm-002",
+        "timestamp": "2026-04-12T07:45:00Z",
+        "weightKg": 77.2,
+        "heightCm": 178,
+        "bmi": 24.4,
+        "waistCircumferenceCm": 94,
+        "bloodPressure": {
+          "systolic": 124,
+          "diastolic": 82,
+          "pulse": 70
+        },
+        "heartRateBpm": 70,
+        "notes": "Slight weight uptick post travel.",
+        "status": "normal"
+      },
+      "newValue": {
+        "id": "bm-002",
+        "timestamp": "2026-04-12T07:45:00Z",
+        "weightKg": 77.2,
+        "heightCm": 178,
+        "bmi": 24.4,
+        "waistCircumferenceCm": 94,
+        "bloodPressure": {
+          "systolic": 112,
+          "diastolic": 72
+        },
+        "heartRateBpm": 70,
+        "notes": "Slight weight uptick post travel.",
+        "status": "normal"
+      }
+    },
+    {
+      "id": "aud-1787383514879-h8z3",
+      "timestamp": "2026-08-22T07:25:14.879Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-003",
+      "summary": "Updated body metric record (bm-003): Weight 78.5kg",
+      "reason": "nil",
+      "previousValue": {
+        "id": "bm-003",
+        "timestamp": "2026-05-20T08:30:00Z",
+        "weightKg": 78.5,
+        "heightCm": 178,
+        "bmi": 24.8,
+        "waistCircumferenceCm": 96,
+        "bloodPressure": {
+          "systolic": 128,
+          "diastolic": 84,
+          "pulse": 72
+        },
+        "heartRateBpm": 72,
+        "notes": "Blood pressure slightly elevated in clinic.",
+        "status": "normal"
+      },
+      "newValue": {
+        "id": "bm-003",
+        "timestamp": "2026-05-20T08:30:00Z",
+        "weightKg": 78.5,
+        "heightCm": 178,
+        "bmi": 24.8,
+        "waistCircumferenceCm": 96,
+        "bloodPressure": {
+          "systolic": 118,
+          "diastolic": 74
+        },
+        "heartRateBpm": 72,
+        "notes": "Blood pressure slightly elevated in clinic.",
+        "status": "normal"
+      }
+    },
+    {
+      "id": "aud-1787383498472-1p3r",
+      "timestamp": "2026-08-22T07:24:58.472Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-005",
+      "summary": "Updated body metric record (bm-005): Weight 80.5kg",
+      "reason": "nil",
+      "previousValue": {
+        "id": "bm-005",
+        "timestamp": "2026-07-04T12:46:00Z",
+        "weightKg": 80.5,
+        "heightCm": 178,
+        "bmi": 25.4,
+        "waistCircumferenceCm": 100,
+        "bloodPressure": {
+          "systolic": 120,
+          "diastolic": 70
+        },
+        "heartRateBpm": 76,
+        "notes": "Recorded at home after lunch. Systolic trending higher.",
+        "status": "warning"
+      },
+      "newValue": {
+        "id": "bm-005",
+        "timestamp": "2026-07-04T12:46:00Z",
+        "weightKg": 80.5,
+        "heightCm": 178,
+        "bmi": 25.4,
+        "waistCircumferenceCm": 100,
+        "bloodPressure": {
+          "systolic": 110,
+          "diastolic": 70
+        },
+        "heartRateBpm": 76,
+        "notes": "Recorded at home after lunch. Systolic trending higher.",
+        "status": "warning"
+      }
+    },
+    {
+      "id": "aud-1787383488311-nicf",
+      "timestamp": "2026-08-22T07:24:48.311Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-006",
+      "summary": "Updated body metric record (bm-006): Weight 81.2kg",
+      "reason": "Nil",
+      "previousValue": {
+        "id": "bm-006",
+        "timestamp": "2026-08-18T08:00:00Z",
+        "weightKg": 81.2,
+        "heightCm": 178,
+        "bmi": 25.6,
+        "waistCircumferenceCm": 101,
+        "bloodPressure": {
+          "systolic": 120,
+          "diastolic": 80
+        },
+        "heartRateBpm": 78,
+        "notes": "Latest morning measurement. Upward trend sustained.",
+        "status": "warning"
+      },
+      "newValue": {
+        "id": "bm-006",
+        "timestamp": "2026-08-18T08:00:00Z",
+        "weightKg": 81.2,
+        "heightCm": 178,
+        "bmi": 25.6,
+        "waistCircumferenceCm": 101,
+        "bloodPressure": {
+          "systolic": 110,
+          "diastolic": 80
+        },
+        "heartRateBpm": 78,
+        "notes": "Latest morning measurement. Upward trend sustained.",
+        "status": "warning"
+      }
+    },
+    {
+      "id": "aud-1787382771383-ty2o",
+      "timestamp": "2026-08-22T07:12:51.384Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-004",
+      "summary": "Updated body metric record (bm-004): Weight 79.8kg",
+      "reason": "Nil",
+      "previousValue": {
+        "id": "bm-004",
+        "timestamp": "2026-06-28T09:00:00Z",
+        "weightKg": 79.8,
+        "heightCm": 178,
+        "bmi": 25.2,
+        "waistCircumferenceCm": 99,
+        "bloodPressure": {
+          "systolic": 134,
+          "diastolic": 86,
+          "pulse": 74
+        },
+        "heartRateBpm": 74,
+        "notes": "BMI crossed 25.0 threshold into overweight.",
+        "status": "warning"
+      },
+      "newValue": {
+        "id": "bm-004",
+        "timestamp": "2026-06-28T09:00:00Z",
+        "weightKg": 79.8,
+        "heightCm": 178,
+        "bmi": 25.2,
+        "waistCircumferenceCm": 99,
+        "bloodPressure": {
+          "systolic": 114,
+          "diastolic": 76
+        },
+        "heartRateBpm": 74,
+        "notes": "BMI crossed 25.0 threshold into overweight.",
+        "status": "warning"
+      }
+    },
+    {
+      "id": "aud-1787382756903-n9pg",
+      "timestamp": "2026-08-22T07:12:36.903Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-005",
+      "summary": "Updated body metric record (bm-005): Weight 80.5kg",
+      "reason": "Nil",
+      "previousValue": {
+        "id": "bm-005",
+        "timestamp": "2026-07-04T12:46:00Z",
+        "weightKg": 80.5,
+        "heightCm": 178,
+        "bmi": 25.4,
+        "waistCircumferenceCm": 100,
+        "bloodPressure": {
+          "systolic": 136,
+          "diastolic": 88,
+          "pulse": 76
+        },
+        "heartRateBpm": 76,
+        "notes": "Recorded at home after lunch. Systolic trending higher.",
+        "status": "warning"
+      },
+      "newValue": {
+        "id": "bm-005",
+        "timestamp": "2026-07-04T12:46:00Z",
+        "weightKg": 80.5,
+        "heightCm": 178,
+        "bmi": 25.4,
+        "waistCircumferenceCm": 100,
+        "bloodPressure": {
+          "systolic": 120,
+          "diastolic": 70
+        },
+        "heartRateBpm": 76,
+        "notes": "Recorded at home after lunch. Systolic trending higher.",
+        "status": "warning"
+      }
+    },
+    {
+      "id": "aud-1787382733353-hhet",
+      "timestamp": "2026-08-22T07:12:13.353Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-006",
+      "summary": "Updated body metric record (bm-006): Weight 81.2kg",
+      "reason": "Nil",
+      "previousValue": {
+        "id": "bm-006",
+        "timestamp": "2026-08-18T08:00:00Z",
+        "weightKg": 81.2,
+        "heightCm": 178,
+        "bmi": 25.6,
+        "waistCircumferenceCm": 101,
+        "bloodPressure": {
+          "systolic": 128,
+          "diastolic": 80
+        },
+        "heartRateBpm": 78,
+        "notes": "Latest morning measurement. Upward trend sustained.",
+        "status": "warning"
+      },
+      "newValue": {
+        "id": "bm-006",
+        "timestamp": "2026-08-18T08:00:00Z",
+        "weightKg": 81.2,
+        "heightCm": 178,
+        "bmi": 25.6,
+        "waistCircumferenceCm": 101,
+        "bloodPressure": {
+          "systolic": 120,
+          "diastolic": 80
+        },
+        "heartRateBpm": 78,
+        "notes": "Latest morning measurement. Upward trend sustained.",
+        "status": "warning"
+      }
+    },
+    {
+      "id": "aud-1787382287101-w7oh",
+      "timestamp": "2026-08-22T07:04:47.101Z",
+      "action": "UPDATE",
+      "entityType": "medication",
+      "recordId": "med-003",
+      "summary": "Updated medication: Atorvastatin (10 mg)",
+      "reason": "Updated prescription dosage/schedule",
+      "previousValue": {
+        "id": "med-003",
+        "condition": "Dyslipidemia (Elevated LDL)",
+        "drugName": "Atorvastatin Calcium",
+        "dosage": "10 mg",
+        "frequency": "Once daily at bedtime",
+        "scheduleTime": [
+          "21:30"
+        ],
+        "startDate": "2026-05-10",
+        "active": true,
+        "lastTakenTimestamp": "2026-08-21T21:40:00Z"
+      },
+      "newValue": {
+        "id": "med-003",
+        "condition": "Dyslipidemia",
+        "drugName": "Atorvastatin",
+        "dosage": "10 mg",
+        "frequency": "Once daily at bedtime",
+        "scheduleTime": [
+          "21:30"
+        ],
+        "startDate": "2026-05-10",
+        "active": true,
+        "lastTakenTimestamp": "2026-08-21T21:40:00Z"
+      }
+    },
+    {
+      "id": "aud-1787382250083-c81b",
+      "timestamp": "2026-08-22T07:04:10.083Z",
+      "action": "UPDATE",
+      "entityType": "medication",
+      "recordId": "med-002",
+      "summary": "Marked dose taken for Metformin HCl (500 mg) at 12:34:10 PM",
+      "reason": "Manual user action"
+    },
+    {
+      "id": "aud-1787382247954-0yq4",
+      "timestamp": "2026-08-22T07:04:07.954Z",
+      "action": "UPDATE",
+      "entityType": "medication",
+      "recordId": "med-002",
+      "summary": "Marked dose taken for Metformin HCl (500 mg) at 12:34:07 PM",
+      "reason": "Manual user action"
+    },
+    {
+      "id": "aud-1787382246573-k940",
+      "timestamp": "2026-08-22T07:04:06.573Z",
+      "action": "UPDATE",
+      "entityType": "medication",
+      "recordId": "med-002",
+      "summary": "Marked dose taken for Metformin HCl (500 mg) at 12:34:06 PM",
+      "reason": "Manual user action"
+    },
+    {
+      "id": "aud-1787381877562-bc5d",
+      "timestamp": "2026-08-22T06:57:57.562Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-006",
+      "summary": "Updated body metric record (bm-006): Weight 81.2kg",
+      "reason": "Nil",
+      "previousValue": {
+        "id": "bm-006",
+        "timestamp": "2026-08-18T08:00:00Z",
+        "weightKg": 81.2,
+        "heightCm": 178,
+        "bmi": 25.6,
+        "waistCircumferenceCm": 101,
+        "bloodPressure": {
+          "systolic": 138,
+          "diastolic": 88,
+          "pulse": 78
+        },
+        "heartRateBpm": 78,
+        "notes": "Latest morning measurement. Upward trend sustained.",
+        "status": "warning"
+      },
+      "newValue": {
+        "id": "bm-006",
+        "timestamp": "2026-08-18T08:00:00Z",
+        "weightKg": 81.2,
+        "heightCm": 178,
+        "bmi": 25.6,
+        "waistCircumferenceCm": 101,
+        "bloodPressure": {
+          "systolic": 128,
+          "diastolic": 80
+        },
+        "heartRateBpm": 78,
+        "notes": "Latest morning measurement. Upward trend sustained.",
+        "status": "warning"
+      }
+    },
+    {
+      "id": "aud-1787381820641-ba0t",
+      "timestamp": "2026-08-22T06:57:00.641Z",
+      "action": "UPDATE",
+      "entityType": "labResults",
+      "recordId": "lab-1787380680854",
+      "summary": "Updated lab result (lab-1787380680854): Fasting Blood Sugar = 90 mg/dL",
+      "reason": "Updated lab measurement value",
+      "previousValue": {
+        "timestamp": "2026-08-22T06:34:00.000Z",
+        "panel": "Blood Sugar",
+        "testName": "Fasting Blood Sugar",
+        "value": 190,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 70,
+          "max": 99,
+          "optimal": "70 - 99 mg/dL"
+        },
+        "status": "critical",
+        "source": "manual",
+        "reviewedByPatient": true,
+        "id": "lab-1787380680854"
+      },
+      "newValue": {
+        "timestamp": "2026-08-22T06:34:00.000Z",
+        "panel": "Blood Sugar",
+        "testName": "Fasting Blood Sugar",
+        "value": 90,
+        "unit": "mg/dL",
+        "referenceRange": {
+          "min": 70,
+          "max": 99,
+          "optimal": "70 - 99 mg/dL"
+        },
+        "status": "normal",
+        "source": "manual",
+        "reviewedByPatient": true,
+        "id": "lab-1787380680854"
+      }
+    },
+    {
+      "id": "aud-1787380680854-6bgh",
+      "timestamp": "2026-08-22T06:38:00.854Z",
+      "action": "CREATE",
+      "entityType": "labResults",
+      "recordId": "lab-1787380680854",
+      "summary": "Logged lab result: Fasting Blood Sugar = 190 mg/dL (CRITICAL)",
+      "reason": "Manual user action"
+    },
+    {
+      "id": "aud-001",
+      "timestamp": "2026-03-01T08:15:00Z",
+      "action": "CREATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-001",
+      "summary": "Initial baseline body metrics logged: Weight 76.0kg, BP 120/80 mmHg",
+      "newValue": {
+        "weightKg": 76,
+        "bloodPressure": "120/80"
+      },
+      "reason": "Baseline intake"
+    },
+    {
+      "id": "aud-002",
+      "timestamp": "2026-05-20T08:45:00Z",
+      "action": "UPDATE",
+      "entityType": "bodyMetrics",
+      "recordId": "bm-003",
+      "summary": "Corrected blood pressure reading from 122/80 to 128/84 mmHg",
+      "previousValue": {
+        "bloodPressure": {
+          "systolic": 122,
+          "diastolic": 80
+        }
+      },
+      "newValue": {
+        "bloodPressure": {
+          "systolic": 128,
+          "diastolic": 84
+        }
+      },
+      "reason": "Second consecutive measurement on left arm recorded"
+    },
+    {
+      "id": "aud-003",
+      "timestamp": "2026-08-10T09:15:00Z",
+      "action": "CREATE",
+      "entityType": "labResults",
+      "recordId": "lab-012",
+      "summary": "OCR Ingestion confirmed: Fasting Blood Sugar 114 mg/dL",
+      "newValue": {
+        "testName": "Fasting Blood Sugar",
+        "value": 114,
+        "unit": "mg/dL"
+      },
+      "reason": "Lab report uploaded via OCR scanner"
+    }
+  ],
+  "preferences": {
+    "digestFrequency": "weekly",
+    "inAppNotifications": true,
+    "pushNotifications": true
+  },
+  "notifications": [
+    {
+      "id": "notif-001",
+      "timestamp": "2026-08-22T08:00:00Z",
+      "title": "Medication Due: Metformin 500mg",
+      "message": "Your evening dose of Metformin 500mg is scheduled for 20:00. Remember to take it with dinner.",
+      "type": "reminder",
+      "read": false
+    },
+    {
+      "id": "notif-002",
+      "timestamp": "2026-08-20T10:00:00Z",
+      "title": "Type 2 Diabetes Risk Prediction Triggered",
+      "message": "Multi-metric analysis flagged rising FBS (114 mg/dL) and upward weight trajectory. View suggested lifestyle modifications.",
+      "type": "warning",
+      "read": false
+    },
+    {
+      "id": "notif-003",
+      "timestamp": "2026-08-15T09:00:00Z",
+      "title": "Weekly HealthSpan Digest Ready",
+      "message": "Your overall Health Score is 78/100 (Fair). Check out your progress over the last 7 days.",
+      "type": "info",
+      "read": true
+    }
+  ]
+}
