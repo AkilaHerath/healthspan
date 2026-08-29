@@ -240,7 +240,11 @@ The requirement explicitly specifies a single test account.
 
 ### Consequence
 
-The credentials must never be treated as a production secret or embedded in production-facing documentation.
+The credentials must never be treated as a production secret or embedded in
+production-facing documentation or client-side source. Keep such fixtures only in
+server-side seed scripts (`scripts/init-db.ts`, `lib/seedData.ts`); the "Quick Demo
+Login" UI that hardcoded the admin credentials in `AuthModal.tsx` was removed so the
+credentials are no longer exposed to the browser/client.
 
 ---
 

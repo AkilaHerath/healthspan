@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Lock, Mail, UserCheck, Sparkles, ShieldCheck, X } from 'lucide-react';
+import { Lock, Mail, UserCheck, ShieldCheck, X } from 'lucide-react';
 
 interface AuthModalProps {
   isOpen: boolean;
@@ -11,8 +11,8 @@ interface AuthModalProps {
 
 export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModalProps) {
   const [mode, setMode] = useState<'login' | 'signup'>('login');
-  const [email, setEmail] = useState('admin@healthspan.com');
-  const [password, setPassword] = useState('admin123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -33,31 +33,6 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
       const data = await res.json();
       if (!res.ok || !data.success) {
         setError(data?.error || 'Authentication failed.');
-        setLoading(false);
-        return;
-      }
-      onLoginSuccess();
-      onClose();
-    } catch (err) {
-      setError('Network error. Please try again.');
-      setLoading(false);
-    }
-  };
-
-  const handleQuickDemoLogin = async () => {
-    setEmail('admin@healthspan.com');
-    setPassword('admin123');
-    setError(null);
-    setLoading(true);
-    try {
-      const res = await fetch('/api/auth/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: 'admin@healthspan.com', password: 'admin123' }),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.success) {
-        setError(data?.error || 'Demo login failed.');
         setLoading(false);
         return;
       }
@@ -98,39 +73,6 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
 
         <form onSubmit={handleSubmit}>
           <div className="modal-body" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {/* Quick Demo Pill Banner */}
-            {mode === 'login' && (
-              <div style={{
-                background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(6, 182, 212, 0.08))',
-                border: '1px solid rgba(16, 185, 129, 0.3)',
-                borderRadius: 'var(--radius-md)',
-                padding: '12px 14px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                gap: '12px'
-              }}>
-                <div>
-                  <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--emerald)' }}>
-                    Demo Credentials
-                  </div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                    admin@healthspan.com &bull; admin123
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  onClick={handleQuickDemoLogin}
-                  className="btn btn-primary btn-sm"
-                  style={{ fontSize: '0.75rem', padding: '6px 12px' }}
-                  disabled={loading}
-                >
-                  <Sparkles size={13} />
-                  Quick Login
-                </button>
-              </div>
-            )}
-
             {error && (
               <div style={{
                 background: 'var(--critical-bg)',
@@ -168,7 +110,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }: AuthModal
                 <input
                   type="email"
                   className="form-input"
-                  placeholder="admin@healthspan.com"
+                  placeholder="you@example.com"
                   value={email}
                   onChange={e => setEmail(e.target.value)}
                   required
